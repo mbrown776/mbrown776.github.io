@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Compsci 92, Midterm Collage</title>
+  <script>(function fixExternalLinks() {
+    function pointToBlank(a) {
+      var href = a.getAttribute("href");
+      if (href && href.indexOf("//") > -1) {
+        // this is an external link.
+        if(!a.getAttribute("target")) {
+          a.setAttribute("target", "_blank");
+        }
+      }
+    }
+    function fixLinks() {
+      document.removeEventListener("DOMContentLoaded", fixLinks);
+      var anchors = document.querySelectorAll("a");
+      var asArray = Array.prototype.slice.call(anchors);
+      asArray.forEach(function(a) {
+        pointToBlank(a);
+      });
+    }
+    document.addEventListener("DOMContentLoaded", fixLinks);
+  }())</script>
+</head>
+<style>
+td {
+  width: 100px;
+  border:5px solid white;
+  vertical-align: top;
+}
+img {
+  width: 100%;
+}
+table {
+  background-color: white;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+body {
+  background-color: lavender;
+}
+p{
+  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+}
+
+</style>
+<body>
+
+  <h3>Places to Visit</h3>
+
+  <p>
+    I'd like to visit each place pictured below.  The left most picture is of Florence, Italy. Next, in the middle picture, is the <a href="http://en.wikipedia.org/wiki/N%C3%BCrburgring">Nurburging,</a>
+    a race track in Germany.  The picture on the right is of the Canals of Amsterdam.
+    The last picture is from San Diego, CA.
+  </p>
+
+  <table>
+    <tr>
+      <td>
+        <img src="http://media-cdn.tripadvisor.com/media/photo-s/03/9b/2d/cc/florence.jpg">
+      </td>
+      <td>
+        <img src="http://media.caranddriver.com/images/media/51/10-nurburgring-facts-revealed-new-inline-image-photo-323381-s-original.jpg">
+      </td>
+      <td>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/b/be/KeizersgrachtReguliersgrachtAmsterdam.jpg">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <img src="http://www.marriott.com/Images/MiniStores/Header_Images/Destinations/en/San_Diego_Hotels_city_view.jpg">
+      </td>
+    </tr>
+  </table>
+  <h3>Teas</h3>
+  <p>
+    I enjoy tea and was able to do a tea tasting recently.  It turns out that all different types of tea (not herbal) come from the same plant, the Camellia sinesis.  This includes black tea, green tea, white tea, and oolong tea.  The difference in flavor comes from where the leaf was grown and the oxidation level it has from the drying process. To learn more about the tea processing method visit the link <a href="http://en.wikipedia.org/wiki/Tea_processing">here</a>.  I also like drinking a red tea called rooibos tea, but this is an herbal tea that comes from a different plant.
+  </p>
+
+  <table>
+
+    <tr>
+      <td colspan="3">
+        <img src="http://cdnpix.com/show/imgs/045eef4d49c082e7dbab171fc372f1ad.jpg" width="50%">
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+        <img src="http://shop.numitea.com/img/category/floweringtea.png">
+      </td>
+
+      <td>
+        <img src="http://www.numitea.com/assets/690/loosetea_2013.png">
+      </td>
+      <td>
+
+        <img src="http://cdn.shopify.com/s/files/1/0220/5782/products/brewed-cups-of-loose-leaf-oolong-tea-wen-shan-baozhong-from-taiwan_1024x1024.jpg?v=1374549397">
+      </td>
+
+      <td>
+        <img src="http://healthmade.net/wp-content/uploads/2014/10/Six-Amazing-Benefits-of-Rooibos-Tea.jpg">
+      </td>
+
+
+    </tr>
+
+  </table>
+
+
+</body>
+</html>
